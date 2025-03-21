@@ -41,7 +41,7 @@
             <label for="60004">COS60004</label>
 
             <input type="radio" id="60007" name="unit" value="COS60007">
-            <label for="60007">COS60007</label>
+            <label for="60007">COS60007</label><br><br>
 
             <label for="tutor">Your Tutor:</label>
             <select id="tutor" name="tutor" required>
@@ -55,9 +55,8 @@
         <fieldset>
             <legend>Issue</legend>
 
-            <input type="checkbox" id="HMTL" name="HMTL" value="HMTL" checked>
-            <label for="HTML">HMTL</label>
-
+            <input type="checkbox" id="HTML" name="HTML" value="HTML" checked>
+            <label for="HTML">HTML</label>
             <input type="checkbox" id="CSS" name="CSS" value="CSS">
             <label for="CSS">CSS</label>
 
@@ -77,10 +76,11 @@
         <fieldset>
             <legend>Preferred Date/Time</legend>
 
-            <label for="date">Select a date:</label>
-            <input type="date" id="date" name="date" required><br>
+            <label for="date">Enter Date:</label>
+            <input type="text" id="date" name="date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$" 
+            title="Enter a valid date in DD/MM/YYYY format (e.g., 05/12/2024)" required><br><br>
 
-            <label for="appt-time">Enter Time (HH:MM):</label>
+            <label for="appt-time">Enter Time:</label>
             <input type="text" id="appt-time" name="appt-time" pattern="^([01]\d|2[0-3]):[0-5]\d$" title="Enter a valid time between 00:00 and 23:59" required>
         </fieldset>
    
