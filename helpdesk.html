@@ -77,11 +77,11 @@
             <legend>Preferred Date/Time</legend>
 
             <label for="date">Enter Date:</label>
-            <input type="text" id="date" name="date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$" 
+            <input type="text" id="date" name="date" placeholder="DD/MM/YYYY" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$" 
             title="Enter a valid date in DD/MM/YYYY format" required><br><br>
 
             <label for="appt-time">Enter Time:</label>
-            <input type="text" id="appt-time" name="appt-time" pattern="^([01]\d|2[0-3]):[0-5]\d$" title="Enter a valid time between 00:00 and 23:59" required>
+            <input type="text" id="appt-time" name="appt-time" placeholder="00:00" pattern="^([01]\d|2[0-3]):[0-5]\d$" title="Enter a valid time between 00:00 and 23:59" required>
         </fieldset>
    
         <input type="submit" value="Register">
