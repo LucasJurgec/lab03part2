@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cat Show Registration Page">
+    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis">
+    <meta name="Lucas Jurgec" content="Cat Show Registration Page">
+
+    <title>Cat Show Registration Page</title>
+
+    <style>
+        .cat-info-box {
+            border: 1px solid grey; 
+            padding: 10px; 
+            width: 500px; 
+            position: relative;
+        }
+
+        .gender-box {
+            border: 1px solid gray; 
+            padding: 10px; 
+            margin-top: 10px;
+            width: 500px; 
+        }
+
+        .competition-box {
+            border: 1px solid gray; 
+            padding: 10px; 
+            margin-top: 10px;
+            width: 500px; 
+        }
+
+    </style>
+</head>
+<body>
+    <h1><strong>Cat Show Registration Page</strong></h1>
+    <form>
+        <label for="owner-name">Owner's Name:</label>
+        <input type="text" id="owner-name" name="owner-name" required><br><br>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <fieldset class="cat-info-box">
+            <legend>Cat Information Details</legend>
+            
+            <label for="cat-name">Cat's Name:</label>
+            <input type="text" id="cat-name" name="cat-name"><br><br>
+
+            <label for="cat-breed">Select Breed:</label>
+            <select id="cat-breed" name="cat-breed">
+                <option value="British Shorthair">British Shorthair</option>
+                <option value="Burmese">Burmese</option>
+                <option value="Manx">Manx</option>
+                <option value="Ragdoll">Ragdoll</option>
+                <option value="Russian Blue">Russian Blue</option>
+                <option value="Siamese">Siamese</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="dob">Select a date:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <fieldset class="gender-box">
+                <legend>Sex</legend>
+    
+                <input type="radio" id="male" name="cat-sex" value="Male" required>
+                <label for="male">Male</label><br><br>
+    
+                <input type="radio" id="female" name="cat-sex" value="Female" required>
+                <label for="female">Female</label><br><br>
+            </fieldset>
+
+            <fieldset class="competition-box">
+                <legend>Competition Categories</legend><br><br>
+
+                <p>Select which categories you would like your cat entered in</p><br><br>
+    
+                <input type="checkbox" id="best-of-breed" name="competition" value="Best of Breed" checked>
+                <label for="best-of-breed">Best of Breed</label><br><br>
+
+                <input type="checkbox" id="cutest" name="competition" value="Cutest">
+                <label for="cutest">Cutest</label><br><br>
+
+                <input type="checkbox" id="ugliest" name="competition" value="Ugliest">
+                <label for="ugliest">Ugliest</label><br><br>
+            </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="42"></textarea><br><br>
+            
+        </fieldset>
+        
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset Form">     
+    </form>
+</body>
+</html>

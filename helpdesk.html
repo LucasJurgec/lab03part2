@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Help desk">
+    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis">
+    <meta name="Lucas Jurgec" content="Help Desk">
+
+    <title>Help Desk</title>
+</head>
+<body>
+    <img src="logo.png" alt="Swinburne logo"><br>
+    <h1><strong>CWA Help Desk Appointment</strong></h1><br><br>
+    <p>
+        The Help Desk is located in ATC620. Open 10.30 to 19.00 Monday to Friday
+    </p><br><br>
+    <p>
+        Check Blackboard for when CWA tutors will be there
+    </p>
+    <form>
+        <fieldset>
+            <legend>Student details</legend>
+            
+            <label for="StudentID">Student ID:</label>
+            <input type="text" id="StudentID" name="StudentID" pattern=".{7,10}" required><br><br>
+
+            <label for="GivenName">Given name:</label>
+            <input type="text" id="GivenName" name="GivenName" maxlength="15" required>
+
+            <label for="familyname">Family Name:</label>
+            <input type="text" id="familyname" name="familyname" maxlength="15" required><br><br>
+        </fieldset>
+
+            <label for="cat-breed">Select Breed:</label>
+            <select id="cat-breed" name="cat-breed">
+                <option value="British Shorthair">British Shorthair</option>
+                <option value="Burmese">Burmese</option>
+                <option value="Manx">Manx</option>
+                <option value="Ragdoll">Ragdoll</option>
+                <option value="Russian Blue">Russian Blue</option>
+                <option value="Siamese">Siamese</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <label for="dob">Select a date:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <fieldset class="gender-box">
+                <legend>Sex</legend>
+    
+                <input type="radio" id="male" name="cat-sex" value="Male" required>
+                <label for="male">Male</label><br><br>
+    
+                <input type="radio" id="female" name="cat-sex" value="Female" required>
+                <label for="female">Female</label><br><br>
+            </fieldset>
+
+            <fieldset class="competition-box">
+                <legend>Competition Categories</legend><br><br>
+
+                <p>Select which categories you would like your cat entered in</p><br><br>
+    
+                <input type="checkbox" id="best-of-breed" name="competition" value="Best of Breed" checked>
+                <label for="best-of-breed">Best of Breed</label><br><br>
+
+                <input type="checkbox" id="cutest" name="competition" value="Cutest">
+                <label for="cutest">Cutest</label><br><br>
+
+                <input type="checkbox" id="ugliest" name="competition" value="Ugliest">
+                <label for="ugliest">Ugliest</label><br><br>
+            </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="42"></textarea><br><br>
+        
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset Form">     
+    </form>
+</body>
+</html>
