@@ -22,7 +22,7 @@
             <legend>Student details</legend>
             
             <label for="StudentID">Student ID:</label>
-            <input type="text" id="StudentID" name="StudentID" pattern=".{7,10}" required><br><br>
+            <input type="text" id="StudentID" name="StudentID" pattern="\d{7,10}" required><br><br>
 
             <label for="GivenName">Given name:</label>
             <input type="text" id="GivenName" name="GivenName" pattern="[A-Za-z]{1,15}" required>
@@ -78,7 +78,7 @@
 
             <label for="date">Enter Date:</label>
             <input type="text" id="date" name="date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$" 
-            title="Enter a valid date in DD/MM/YYYY format (e.g., 05/12/2024)" required><br><br>
+            title="Enter a valid date in DD/MM/YYYY format" required><br><br>
 
             <label for="appt-time">Enter Time:</label>
             <input type="text" id="appt-time" name="appt-time" pattern="^([01]\d|2[0-3]):[0-5]\d$" title="Enter a valid time between 00:00 and 23:59" required>
