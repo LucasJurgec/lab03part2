@@ -17,7 +17,7 @@
     <p>
         Check Blackboard for when CWA tutors will be there
     </p>
-    <form>
+    <form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
         <fieldset>
             <legend>Student details</legend>
             
@@ -80,38 +80,10 @@
             <label for="date">Select a date:</label>
             <input type="date" id="date" name="date" required><br>
 
-            <label for="appt-time">Select Time:</label>
-            <input type="time" id="appt-time" name="appt-time">
+            <label for="appt-time">Enter Time (HH:MM):</label>
+            <input type="text" id="appt-time" name="appt-time" pattern="^([01]\d|2[0-3]):[0-5]\d$" title="Enter a valid time between 00:00 and 23:59" required>
         </fieldset>
-
-            <label for="dob">Select a date:</label>
-            <input type="date" id="dob" name="dob"><br><br>
-
-            <fieldset class="gender-box">
-                <legend>Sex</legend>
-    
-                <input type="radio" id="male" name="cat-sex" value="Male" required>
-                <label for="male">Male</label><br><br>
-    
-                <input type="radio" id="female" name="cat-sex" value="Female" required>
-                <label for="female">Female</label><br><br>
-            </fieldset>
-
-            <fieldset class="competition-box">
-                <legend>Competition Categories</legend><br><br>
-
-                <p>Select which categories you would like your cat entered in</p><br><br>
-    
-                <input type="checkbox" id="best-of-breed" name="competition" value="Best of Breed" checked>
-                <label for="best-of-breed">Best of Breed</label><br><br>
-
-                <input type="checkbox" id="cutest" name="competition" value="Cutest">
-                <label for="cutest">Cutest</label><br><br>
-
-                <input type="checkbox" id="ugliest" name="competition" value="Ugliest">
-                <label for="ugliest">Ugliest</label><br><br>
-            </fieldset>
-        
+   
         <input type="submit" value="Register">
         <input type="reset" value="Reset Form">     
     </form>
