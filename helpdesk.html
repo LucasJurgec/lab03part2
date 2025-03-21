@@ -25,23 +25,23 @@
             <input type="text" id="StudentID" name="StudentID" pattern=".{7,10}" required><br><br>
 
             <label for="GivenName">Given name:</label>
-            <input type="text" id="GivenName" name="GivenName" maxlength="15" pattern="[A-Za-z]" required>
+            <input type="text" id="GivenName" name="GivenName" pattern="[A-Za-z]{1,15}" required>
 
             <label for="familyname">Family Name:</label>
-            <input type="text" id="familyname" name="familyname" maxlength="15" pattern="[A-Za-z]" required><br><br>
+            <input type="text" id="familyname" name="familyname" pattern="[A-Za-z]{1,15}" required><br><br>
         </fieldset>
 
         <fieldset>
             <legend>Your unit</legend>
 
-            <input type="radio" id="10011" name="COS10011" value="COS10011" required>
-            <label for="COS10011">COS10011</label>
+            <input type="radio" id="10011" name="unit" value="COS10011" required>
+            <label for="10011">COS10011</label>
 
-            <input type="radio" id="60004" name="COS60004" value="COS60004" required>
-            <label for="COS60004">COS60004</label>
+            <input type="radio" id="60004" name="unit" value="COS60004">
+            <label for="60004">COS60004</label>
 
-            <input type="radio" id="60007" name="COS60007"-sex value="COS60007" required>
-            <label for="COS60007">COS60007</label><br><br>
+            <input type="radio" id="60007" name="unit" value="COS60007">
+            <label for="60007">COS60007</label>
 
             <label for="tutor">Your Tutor:</label>
             <select id="tutor" name="tutor" required>
