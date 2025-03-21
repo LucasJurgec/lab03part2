@@ -41,7 +41,7 @@
             <label for="COS60004">COS60004</label>
 
             <input type="radio" id="60007" name="COS60007"-sex value="COS60007" required>
-            <label for="COS60007">COS60007</label><br>
+            <label for="COS60007">COS60007</label><br><br>
 
             <label for="tutor">Your Tutor:</label>
             <select id="tutor" name="tutor" required>
@@ -53,10 +53,12 @@
         </fieldset>
 
         <fieldset>
+            <legend>Issue</legend>
+
             <input type="checkbox" id="HMTL" name="HMTL" value="HMTL" checked>
             <label for="HTML">HMTL</label>
 
-            <input type="CSS" id="CSS" name="CSS" value="CSS">
+            <input type="checkbox" id="CSS" name="CSS" value="CSS">
             <label for="CSS">CSS</label>
 
             <input type="checkbox" id="Java" name="Java" value="Java">
@@ -68,8 +70,18 @@
             <input type="checkbox" id="MySQL" name="MySQL" value="MySQL">
             <label for="MySQL">MySQL</label><br><br>
 
-            <label for="Issue">Descripiton of Issue</label>
-            <textarea id="Issue" name="Issue" rows="4" cols="42">Please describe your issue here</textarea><br><br>
+            <label for="Issue">Descripiton of Issue</label><br>
+            <textarea id="Issue" name="Issue" rows="4" cols="42" placeholder="Please describe your issue here" required></textarea><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Date/Time</legend>
+
+            <label for="date">Select a date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="appt-time">Select Time:</label>
+            <input type="time" id="appt-time" name="appt-time">
         </fieldset>
 
             <label for="dob">Select a date:</label>
