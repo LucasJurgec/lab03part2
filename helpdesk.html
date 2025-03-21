@@ -10,10 +10,10 @@
 </head>
 <body>
     <img src="logo.png" alt="Swinburne logo"><br>
-    <h1><strong>CWA Help Desk Appointment</strong></h1><br><br>
+    <h1><strong>CWA Help Desk Appointment</strong></h1><br>
     <p>
         The Help Desk is located in ATC620. Open 10.30 to 19.00 Monday to Friday
-    </p><br><br>
+    </p><br>
     <p>
         Check Blackboard for when CWA tutors will be there
     </p>
@@ -25,22 +25,52 @@
             <input type="text" id="StudentID" name="StudentID" pattern=".{7,10}" required><br><br>
 
             <label for="GivenName">Given name:</label>
-            <input type="text" id="GivenName" name="GivenName" maxlength="15" required>
+            <input type="text" id="GivenName" name="GivenName" maxlength="15" pattern="[A-Za-z]" required>
 
             <label for="familyname">Family Name:</label>
-            <input type="text" id="familyname" name="familyname" maxlength="15" required><br><br>
+            <input type="text" id="familyname" name="familyname" maxlength="15" pattern="[A-Za-z]" required><br><br>
         </fieldset>
 
-            <label for="cat-breed">Select Breed:</label>
-            <select id="cat-breed" name="cat-breed">
-                <option value="British Shorthair">British Shorthair</option>
-                <option value="Burmese">Burmese</option>
-                <option value="Manx">Manx</option>
-                <option value="Ragdoll">Ragdoll</option>
-                <option value="Russian Blue">Russian Blue</option>
-                <option value="Siamese">Siamese</option>
-                <option value="Other">Other</option>
+        <fieldset>
+            <legend>Your unit</legend>
+
+            <input type="radio" id="10011" name="COS10011" value="COS10011" required>
+            <label for="COS10011">COS10011</label>
+
+            <input type="radio" id="60004" name="COS60004" value="COS60004" required>
+            <label for="COS60004">COS60004</label>
+
+            <input type="radio" id="60007" name="COS60007"-sex value="COS60007" required>
+            <label for="COS60007">COS60007</label><br>
+
+            <label for="tutor">Your Tutor:</label>
+            <select id="tutor" name="tutor" required>
+                <option value="" selected disabled>Please Select</option>
+                <option value="James">James</option>
+                <option value="Phil">Phil</option>
+                <option value="Jess">Jess</option>
             </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <input type="checkbox" id="HMTL" name="HMTL" value="HMTL" checked>
+            <label for="HTML">HMTL</label>
+
+            <input type="CSS" id="CSS" name="CSS" value="CSS">
+            <label for="CSS">CSS</label>
+
+            <input type="checkbox" id="Java" name="Java" value="Java">
+            <label for="Java">JavaScript</label>
+
+            <input type="checkbox" id="PHP" name="PHP" value="PHP">
+            <label for="PHP">PHP</label>
+
+            <input type="checkbox" id="MySQL" name="MySQL" value="MySQL">
+            <label for="MySQL">MySQL</label><br><br>
+
+            <label for="Issue">Descripiton of Issue</label>
+            <textarea id="Issue" name="Issue" rows="4" cols="42">Please describe your issue here</textarea><br><br>
+        </fieldset>
 
             <label for="dob">Select a date:</label>
             <input type="date" id="dob" name="dob"><br><br>
@@ -69,9 +99,6 @@
                 <input type="checkbox" id="ugliest" name="competition" value="Ugliest">
                 <label for="ugliest">Ugliest</label><br><br>
             </fieldset>
-
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" rows="4" cols="42"></textarea><br><br>
         
         <input type="submit" value="Register">
         <input type="reset" value="Reset Form">     
